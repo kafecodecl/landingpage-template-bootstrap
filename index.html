@@ -11,13 +11,44 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-dark">
-        <div class="container">
-          <!-- <h1 class="navbar-brand">Titulo</h1> -->
-          <img src="assets/img/logo-horizontal.png" alt="anandamaya" class="logo-brand" />
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-horizontal.png" alt="anandamaya" class="logo-brand" />
+            </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="none">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Menu 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Menu 3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <div class="slides">
+        <div class="slide">
+            <p class="slide-text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+            <img src="assets/img/header001.jpg" alt="" class="slide-image">
         </div>
-      </nav>
-      <div class="container">
+        <div class="slide-1">
+            <p class="slide-text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+            <img src="assets/img/nosotras.jpg" alt="" class="slide-image">
+        </div>
+        <div class="slide-2">
+            <p class="slide-text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+            <img src="assets/img/store.jpg" alt="" class="slide-image">
+        </div>
+      </div>
+      <!-- <div class="container">
         <div class="title font-weight-bold">
           ANTUMAYA
           <br />
@@ -25,15 +56,15 @@
           <br />
           <button class="btn mt-3">Registrate</button>
         </div>
-      </div>
+      </div> -->
     </header>
     <main>
       <!-- PRIMERA SECCION -->
-      <div class="row text-white py-5" id="row-servicios">
+      <div class="row text-white py-5" id="primera-seccion">
         <div class="container text-center">
-          <div class="d-flex justify-content-center mb-4">
+          <div class="row justify-content-center mb-4">
             <div class="col-md-8">
-              <h1 class="font-weight-bold">Nuestros Servicios</h1>
+              <h1 class="font-weight-bold">¿Quienes somos?</h1>
               <h5>
                 Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata
                 corpora quaeritis. Summus brains sit​​.
@@ -41,7 +72,7 @@
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-lg-4 mt-3">
+            <div class="col-lg-6 mt-3">
               <img src="assets/img/person1.jpg" alt="person" />
               <h4 class="font-weight-bold mt-4">Terapias</h4>
               <p>
@@ -51,19 +82,9 @@
                 vultus comedat cerebella viventium. Qui animated corpse.
               </p>
             </div>
-            <div class="col-lg-4 mt-3">
+            <div class="col-lg-6 mt-3">
               <img src="assets/img/person2.jpg" alt="person" />
               <h4 class="font-weight-bold mt-4">Masajes</h4>
-              <p>
-                Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata
-                corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor
-                dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil
-                vultus comedat cerebella viventium. Qui animated corpse.
-              </p>
-            </div>
-            <div class="col-lg-4 mt-3">
-              <img src="assets/img/person3.jpg" alt="person" />
-              <h4 class="font-weight-bold mt-4">Depilación</h4>
               <p>
                 Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata
                 corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor
@@ -76,14 +97,14 @@
       </div>
 
       <!-- SEGUNDA SECCION -->
-      <div class="row" id="row-productos">
+      <div class="row" id="segunda-seccion">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 text-center">
               <img src="assets/img/store.jpg" alt="tienda" />
             </div>
             <div class="col-lg-7">
-              <h1 class="font-weight-bold mt-3">Nuestros Productos</h1>
+              <h1 class="font-weight-bold mt-3">Nuestra misión</h1>
               <p>
                 Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata
                 corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor
@@ -107,7 +128,7 @@
       </div>
 
       <!-- TERCERA SECCION -->
-      <div class="row" id="row-datos">
+      <div class="row" id="tercera-seccion">
         <div class="container">
           <div class="row text-center">
             <div class="col">
@@ -147,9 +168,29 @@
       </div>
 
       <!-- CUARTA SECCION -->
-      <div class="row" id="row-nosotros">
+      <div class="row" id="cuarta-seccion">
         <div class="container">
-          <div class="row">
+          <section class="gallery">
+            <figure class="gallery__picture">
+              <img src="assets/img/person1.jpg" alt="" class="gallery__img" />
+            </figure>
+            <figure class="gallery__picture">
+              <img src="assets/img/person2.jpg" alt="" class="gallery__img" />
+            </figure>
+            <figure class="gallery__picture">
+              <img src="assets/img/person2.jpg" alt="" class="gallery__img" />
+            </figure>
+            <figure class="gallery__picture">
+              <img src="assets/img/person3.jpg" alt="" class="gallery__img" />
+            </figure>
+            <figure class="gallery__picture">
+              <img src="assets/img/fondo1.jpg" alt="" class="gallery__img" />
+            </figure>
+            <figure class="gallery__picture">
+              <img src="assets/img/store.jpg" alt="" class="gallery__img" />
+            </figure>
+          </section>
+          <!-- <div class="row">
             <div class="col-lg-7">
               <h1 class="font-weight-bold mt-3">Nosotras</h1>
               <p>
@@ -173,16 +214,74 @@
             <div class="col-lg-5 text-center">
               <img src="assets/img/nosotras.jpg" alt="tienda" />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- QUINTA SECCION -->
-      <div class="row" id="row-frace"></div>
+      <div class="row" id="quinta-seccion">
+        <div>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/assets/img/logo-horizontal.png" alt="" width="150" />
+            <h2>Contáctanos</h2>
+            <p class="lead">
+              ¿Tienes alguna duda o consulta?, no dudes en contactarnos. Completa el siguiente formulario o escribenos
+              directamente vía Whatsapp:
+              <a href="tel:+56999999999">+56999999999</a>
+              <a href="tel:+56999999999">+56999999999</a>
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-12">
+              <h4 class="mb-3">Envianos un mensaje</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-12">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                    <div class="invalid-feedback">Debe ingresar su nombre.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="username" class="form-label">
+                      Teléfono
+                      <span>(opcional)</span>
+                    </label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="username" placeholder="+56987654321" required="" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="username" class="form-label">
+                      Email
+                    </label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="username" placeholder="usuario@email.com" required="" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="username" class="form-label">
+                      Mensaje
+                    </label>
+                    <div class="input-group">
+                     <textarea name="mensaje" id="" cols="100" rows="10"></textarea>
+                    </div>
+                  </div>
+
+                <hr class="my-4" />
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- SEXTA SECCION -->
-      <div class="row" id="row-contacto"></div>
+      <div class="row" id="sexta-seccion"></div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
